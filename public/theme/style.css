@@ -1,0 +1,13 @@
+body {
+    font-family: tahoma, sans-serif;
+    background-color: #f9f9f9;
+}
+.card {
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+header {
+    border-radius: 0.5rem;
+}

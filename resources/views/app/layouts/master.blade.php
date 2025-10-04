@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دیوار - لیست محصولات</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('theme/style.css')}}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm mb-4">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-danger" href="#">دیوار</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#">خانه</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">دسته‌بندی‌ها</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">درباره ما</a></li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="جستجو">
+                <button class="btn btn-danger" type="submit">جستجو</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<header class="bg-danger text-white text-center py-5 mb-4 rounded">
+    <h1>به دیوار خوش آمدید</h1>
+    <p>خرید و فروش آسان کالاهای نو و دست دوم</p>
+</header>
+
+<div class="container">
+    <h4 class="mb-4">محصولات جدید</h4>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @yield('content')
+    </div>
+</div>
+
+<footer class="bg-light text-center text-muted py-4 mt-5 border-top">
+    <p>تمامی حقوق برای دیوار محفوظ است © 2025</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
